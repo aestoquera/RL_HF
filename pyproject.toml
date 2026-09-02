@@ -1,13 +1,20 @@
 [project]
 name = "rl-hf"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reinforcement Learning with Hugging Face"
 readme = "README.md"
 authors = [
     { name = "Adrian_E", email = "aestoquera@ikerlan.es" }
 ]
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "stable-baselines3",
+    "swig",
+    "gymnasium[box2d]",
+    "huggingface-sb3",
+    "ipykernel>=7.3.0",
+    "moviepy>=2.2.1",
+]
 
 [project.scripts]
 rl-hf = "rl_hf:main"
