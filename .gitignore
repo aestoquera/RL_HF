@@ -1,0 +1,7 @@
+*.mp4
+*.zip
+ml-agents/
+.venv/
+.venv_discarded/
+
+trained-envs-executables/
